@@ -1,0 +1,189 @@
+/* 공통 */
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.header .container {
+    padding: 2.7rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    display: block;
+    width: 8.5rem;
+    height: 3.3rem;
+    background: url(../img/logo.png) no-repeat center/cover;
+}
+.container .gnb {
+    text-align: center;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.ham-menu {
+    display: none;
+}
+.title-wrap .eng-title {
+    color: #8a8a8a;
+    font-size: 2rem;
+}
+.title-wrap h3 {
+    color: #000;
+    font-size: 4.2rem;
+    font-weight: 500;
+}
+.title-wrap h3::after {
+    content: "";
+    display: block;
+    width: 7.2rem;
+    height: 0.2rem;
+    background-color: #000;
+    margin: 2rem auto 10rem;
+}
+
+.container .gnb > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .gnb > ul > li {
+    margin-right: 6rem;
+}
+.container .gnb > ul > li:last-child {
+    margin-right: 0;
+}
+.gnb .depth1 > a {
+    display: block;
+    padding: 1rem;
+}
+.gnb .depth2 {
+    text-align: center;
+    display: none;
+}
+.section {
+    width: 100%;
+    text-align: center;
+    padding: 10rem 0 20rem;
+}
+
+/* footer */
+.footer {
+    background-color: #86674f;
+    color: #fff;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8.8rem 1rem;
+}
+.footer .company-info {
+    display: flex;
+}
+.footer .logo-wrap {
+    width: 11.8rem;
+    height: 4.7rem;
+    background: url(../img/logo_transparent.png) no-repeat center/cover;
+    margin-right: 9.3rem;
+}
+.footer .text-wrap,
+.footer .link-wrap {
+    font-size: 1.8rem;
+}
+.footer .text-wrap p > br {
+    display: none;
+}
+.footer .link-wrap {
+    outline: 0.1rem solid #fff;
+}
+.footer .link-wrap a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.footer .link-wrap a::after {
+    content: "";
+    display: block;
+    width: 3.8rem;
+    height: 3.8rem;
+    background-image: url(../img/small_arrow.png);
+    margin-left: 10rem;
+}
+.footer small {
+    display: block;
+    font-size: 1.6rem;
+    color: #ac9b8d;
+}
+
+@media screen and (max-width: 1239px) {
+    .container {
+        padding: 0 1.6rem;
+    }
+    .container .gnb {
+        font-size: 1.6rem;
+    }
+    .container .gnb > ul > li {
+        margin-right: 2rem;
+    }
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 1rem;
+    }
+    .footer .company-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .footer .logo-wrap {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 7rem 0;
+    }
+    .container .gnb {
+        display: none;
+    }
+    .ham-menu {
+        display: block;
+        width: 3.4rem;
+        height: 3.4rem;
+        background: url(../img/hamburger.png) no-repeat center/cover;
+    }
+    .title-wrap .eng-title {
+        font-size: 1.6rem;
+    }
+    .title-wrap h3 {
+        font-size: 2.8rem;
+    }
+    .title-wrap h3::after {
+        margin: 2rem auto 6rem;
+    }
+
+    /* footer */
+    .footer .container {
+        padding: 2rem;
+    }
+    .footer .logo-wrap {
+        width: 5.5rem;
+        height: 2.2rem;
+    }
+    .footer .text-wrap,
+    .footer .link-wrap,
+    .footer small,
+    .footer .link-wrap a {
+        font-size: 1.4rem;
+    }
+    .footer .link-wrap a {
+        padding: 0.6rem 1rem;
+    }
+    .footer .link-wrap a::after {
+        margin-left: 5rem;
+    }
+}
